@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{3B76A296-FBCD-4129-80D3-462BFACA38CE}|Default">
+  <MonoDevelop.Ide.ItemProperties.FluToDo.Droid PreferredExecutionTarget="Android.192.168.58.101:5555" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FluToDo/App.xaml.cs">
+    <Files>
+      <File FileName="FluToDo/ServerConnections/ServerConnectionManager.cs" Line="76" Column="97" />
+      <File FileName="FluToDo/ServerConnections/ServerConnection.cs" Line="111" Column="52" />
+      <File FileName="FluToDo/App.xaml.cs" Line="48" Column="80" />
+      <File FileName="../../Likwid MNOS/Libraries/Eyetime.Channels.Logic/ChannelLogic/Managers/ChannelDataManager.cs" Line="155" Column="17" NotebookId="1" />
+      <File FileName="../../Downloads/ToDoAPI-master/ToDo.Server/Controllers/TodoController.cs" Line="113" Column="3" NotebookId="1" />
+      <File FileName="../../Downloads/ToDoAPI-master/ToDo.Core/Models/TodoRepository.cs" Line="52" Column="52" NotebookId="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/valerio/Projects/FluToDo/FluToDo/ServerConnection/ServerConnection.cs" relfile="FluToDo/ServerConnection/ServerConnection.cs" line="60" column="1" />
+      <Breakpoint file="/Users/valerio/Projects/FluToDo/FluToDo/ServerConnections/HttpClientSample.cs" relfile="FluToDo/ServerConnections/HttpClientSample.cs" line="59" column="1" />
+      <Breakpoint file="/Users/valerio/Projects/FluToDo/FluToDo/ServerConnections/HttpClientSample.cs" relfile="FluToDo/ServerConnections/HttpClientSample.cs" line="22" column="45" />
+      <Breakpoint file="/Users/valerio/Projects/FluToDo/FluToDo/ServerConnections/HttpClientSample.cs" relfile="FluToDo/ServerConnections/HttpClientSample.cs" line="73" column="1" />
+      <Breakpoint file="/Users/valerio/Projects/FluToDo/FluToDo/ServerConnections/HttpClientSample.cs" relfile="FluToDo/ServerConnections/HttpClientSample.cs" line="30" column="1" />
+      <Breakpoint file="/Users/valerio/Projects/FluToDo/FluToDo/ServerConnections/ServerConnection.cs" relfile="FluToDo/ServerConnections/ServerConnection.cs" line="73" column="1" />
+      <Breakpoint file="/Users/valerio/Projects/FluToDo/FluToDo/ServerConnections/ServerConnectionManager.cs" relfile="FluToDo/ServerConnections/ServerConnectionManager.cs" line="60" column="1" />
+      <Breakpoint file="/Users/valerio/Projects/FluToDo/FluToDo/ServerConnections/ServerConnectionManager.cs" relfile="FluToDo/ServerConnections/ServerConnectionManager.cs" line="65" column="1" />
+      <Breakpoint file="/Users/valerio/Projects/FluToDo/FluToDo/App.xaml.cs" relfile="FluToDo/App.xaml.cs" line="68" column="1" />
+      <Breakpoint file="/Users/valerio/Projects/FluToDo/FluToDo/ServerConnections/ServerConnection.cs" relfile="FluToDo/ServerConnections/ServerConnection.cs" line="93" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.FluToDo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4987F3EA-6764-4678-8330-2DC959F214DD">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.FluToDo.iOS>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>../../Downloads/ToDoAPI-master/ToDo.Core/ToDo.Core.csproj</String>
+  </DisabledProjects>
+</Properties>
