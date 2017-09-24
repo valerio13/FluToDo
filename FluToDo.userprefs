@@ -1,13 +1,10 @@
 ﻿<Properties StartupConfiguration="{3B76A296-FBCD-4129-80D3-462BFACA38CE}|Default">
   <MonoDevelop.Ide.ItemProperties.FluToDo.Droid PreferredExecutionTarget="Android.192.168.58.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FluToDo/ServerConnections/ServerConnection.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="FluToDo/App.xaml.cs" Line="56" Column="19" />
       <File FileName="FluToDo/ServerConnections/ServerConnectionManager.cs" Line="147" Column="9" />
       <File FileName="FluToDo/ServerConnections/ServerConnection.cs" Line="11" Column="9" />
-      <File FileName="../../Likwid MNOS/Libraries/Eyetime.Channels.Logic/ChannelLogic/Managers/ChannelDataManager.cs" Line="155" Column="17" NotebookId="1" />
-      <File FileName="../../Downloads/ToDoAPI-master/ToDo.Server/Controllers/TodoController.cs" Line="113" Column="3" NotebookId="1" />
-      <File FileName="../../Downloads/ToDoAPI-master/ToDo.Core/Models/TodoRepository.cs" Line="52" Column="52" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
