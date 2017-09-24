@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{3B76A296-FBCD-4129-80D3-462BFACA38CE}|Default">
   <MonoDevelop.Ide.ItemProperties.FluToDo.Droid PreferredExecutionTarget="Android.192.168.58.101:5555" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="FluToDo/App.xaml.cs">
     <Files>
       <File FileName="FluToDo/App.xaml.cs" Line="56" Column="19" />
       <File FileName="FluToDo/ServerConnections/ServerConnectionManager.cs" Line="147" Column="9" />
