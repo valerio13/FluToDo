@@ -54,7 +54,7 @@ namespace FluToDo.ViewsItems
             }
             else
             {
-                await DisplayAlert("Atención", "Ningún elemento memorizado en la base de datos.", "OK");
+                await DisplayAlert("Attetion", "No element found.", "OK");
                 listView.ItemsSource = null;
             }
 
@@ -64,16 +64,22 @@ namespace FluToDo.ViewsItems
 
 
         //Main Manu Management
-        void OnOpenMenuCliked(object sender, EventArgs args)
+        private void OnOpenMenuCliked(object sender, EventArgs args)
         {
             //TODO: main menu options
 
         }
 
         //Item selected event
-        void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             //TODO: manage the item selected event
+        }
+
+        private void OnCreateNewItem(object sender, EventArgs args)
+        {
+            var newItemPage = new CreateNewItem();
+            Navigation.PushAsync(newItemPage);
         }
 
         #endregion

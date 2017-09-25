@@ -1,14 +1,12 @@
 ﻿<Properties StartupConfiguration="{3B76A296-FBCD-4129-80D3-462BFACA38CE}|Default">
   <MonoDevelop.Ide.ItemProperties.FluToDo.Droid PreferredExecutionTarget="Android.192.168.58.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FluToDo/ViewsItems/TodoListItemsView.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FluToDo/ViewsItems/CreateNewItem.xaml.cs">
     <Files>
-      <File FileName="FluToDo/ViewsItems/TodoListItemsView.xaml" Line="32" Column="39" />
-      <File FileName="FluToDo/ViewsItems/TodoListItemsView.xaml.cs" Line="76" Column="51" />
-      <File FileName="FluToDo/ViewModel/TodoListItemViewModel.cs" Line="56" Column="9" />
-      <File FileName="FluToDo/ServerConnections/ServerConnectionManager.cs" Line="60" Column="37" />
-      <File FileName="FluToDo/App.xaml" Line="7" Column="1" />
-      <File FileName="FluToDo/App.xaml.cs" Line="56" Column="1" />
-      <File FileName="FluToDo/obj/Debug/FluToDo.ViewsItems.TodoListItemsView.xaml.g.cs" Line="25" Column="1" />
+      <File FileName="FluToDo/ViewsItems/CreateNewItem.xaml.cs" Line="64" Column="19" />
+      <File FileName="FluToDo/ViewModel/CreateNewItemViewModel.cs" Line="49" Column="33" />
+      <File FileName="../Telartes/Telartes/ViewsXaml/ListPages/AgendaListPage.xaml.cs" Line="185" Column="1" NotebookId="1" />
+      <File FileName="../Telartes/Telartes/ViewsXaml/Item/AgendaItemPage.xaml" Line="1" Column="1" NotebookId="1" />
+      <File FileName="../Telartes/Telartes/ViewsXaml/Item/AgendaItemPage.xaml.cs" Line="24" Column="1" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
