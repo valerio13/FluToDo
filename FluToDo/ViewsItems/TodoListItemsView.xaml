@@ -29,7 +29,12 @@
             <Frame VerticalOptions="FillAndExpand"
                 Padding="10">
                 <ListView x:Name="listView"
-                    ItemSelected="OnItemSelected"
+
+                    ItemSelected="OnItemSelected" 
+                    ItemTapped="OnTap" 
+                    IsPullToRefreshEnabled="true" 
+                    Refreshing="OnRefresh"
+
                     ItemsSource="{Binding .}"
                     SeparatorVisibility="Default"
                     SeparatorColor="#00a885">
@@ -41,6 +46,9 @@
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
+                                <ViewCell.ContextActions>
+                                    <MenuItem Clicked="OnDelete" Text="Delete" IsDestructive="true" CommandParameter="{Binding .}" />
+                                </ViewCell.ContextActions>
                                 <Grid Padding="0,5"
                                     RowSpacing="1"
                                     ColumnSpacing="1">

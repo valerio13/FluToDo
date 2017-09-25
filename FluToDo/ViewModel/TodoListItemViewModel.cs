@@ -19,6 +19,11 @@ namespace FluToDo.ViewModel
         /// </summary>
         public EventHandler<IEnumerable<TodoItem>> OnGetData;
 
+        /// <summary>
+        /// The on delete data.
+        /// </summary>
+        public EventHandler<bool> OnDeleteData;
+
         #endregion
 
         #region Public Methods
@@ -38,6 +43,12 @@ namespace FluToDo.ViewModel
             this.serverConnectionManager.GetTodoItem();
             this.serverConnectionManager.OnGetTaskCompleted += this.OnGetTaskCompletedAsync;
         }
+
+        public void DeleteItem(TodoItem todoItem)
+        {
+            this.serverConnectionManager.OnDeleteTaskCompleted += this.OnDeleteItemCompleted;
+            this.serverConnectionManager.DeleteTodoItem(todoItem);
+        }
         #endregion
 
         #region Private Methods
@@ -52,6 +63,11 @@ namespace FluToDo.ViewModel
                 this.OnGetData(this, todoItems);
             }
 
+        }
+
+        void OnDeleteItemCompleted(object sender, bool result)
+        {
+            this.OnDeleteData(this, result);
         }
         #endregion
     }
