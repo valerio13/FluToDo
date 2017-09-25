@@ -30,7 +30,6 @@
                 Padding="10">
                 <ListView x:Name="listView"
 
-                    ItemSelected="OnItemSelected" 
                     ItemTapped="OnTap" 
                     IsPullToRefreshEnabled="true" 
                     Refreshing="OnRefresh"
@@ -73,9 +72,6 @@
                                             <OnPlatform x:TypeArguments="ImageSource"
                                                 Android="check.ico" />
                                         </Image.Source>
-                                        <Image.GestureRecognizers>
-                                            <TapGestureRecognizer Tapped="OnOpenMenuCliked" />
-                                        </Image.GestureRecognizers>
                                     </Image>
                                 </Grid>
                             </ViewCell>

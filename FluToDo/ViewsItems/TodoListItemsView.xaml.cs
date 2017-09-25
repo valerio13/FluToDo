@@ -20,6 +20,8 @@ namespace FluToDo.ViewsItems
 
         private TodoItem itemDeleted;
 
+        private TodoItem itemChanged;
+
         #endregion
 
         #region Public Methods
@@ -68,21 +70,9 @@ namespace FluToDo.ViewsItems
 
             activityIndicator.IsRunning = false;
             activityIndicator.HeightRequest = 0;
-        }
-
-
-        //Main Manu Management
-        private void OnOpenMenuCliked(object sender, EventArgs args)
-        {
-            //TODO: main menu options
 
         }
 
-        //Item selected event
-        private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            //TODO: manage the item selected event
-        }
 
         private void OnCreateNewItem(object sender, EventArgs args)
         {
@@ -96,9 +86,14 @@ namespace FluToDo.ViewsItems
             //TODO: manage the refresh event
         }
 
-        void OnTap(object sender, ItemTappedEventArgs e)
+        void OnTap(object sender, ItemTappedEventArgs itemArgs)
         {
-            //TODO: manage the item tap event
+            TodoItem todoItem = (TodoItem)itemArgs.Item;
+            todoItem.IsComplete = !todoItem.IsComplete;
+            this.itemChanged = todoItem;
+
+            this.todoListItemViewModel.OnChangeItemState += OnChangeItemState;
+            this.todoListItemViewModel.ChangeItemState(todoItem);
         }
 
         void OnDelete(object sender, EventArgs e)
@@ -130,6 +125,32 @@ namespace FluToDo.ViewsItems
             }
 
             this.itemDeleted = null;
+            this.todoListItemViewModel.OnDeleteData -= this.OnDeleteDataResult;
+        }
+
+        void OnChangeItemState(object sender, bool result)
+        {
+            if (result)
+            {
+                foreach (TodoItem item in this.todoItems)
+                {
+                    if (item.Key == this.itemChanged.Key)
+                    {
+                        item.IsComplete = this.itemChanged.IsComplete;
+                    }
+                }
+
+                listView.ItemsSource = null;
+                listView.ItemsSource = this.todoItems;
+            }
+            else
+            {
+                DisplayAlert("Change item status", "Was not possible to change the item status.", "OK");
+            }
+
+            this.itemChanged = null;
+            this.todoListItemViewModel.OnChangeItemState -= OnChangeItemState;
+
         }
 
         #endregion

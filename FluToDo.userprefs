@@ -1,10 +1,14 @@
 ﻿<Properties StartupConfiguration="{3B76A296-FBCD-4129-80D3-462BFACA38CE}|Default">
-  <MonoDevelop.Ide.ItemProperties.FluToDo.Droid PreferredExecutionTarget="Android.192.168.58.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FluToDo/ViewModel/TodoListItemViewModel.cs">
+  <MonoDevelop.Ide.ItemProperties.FluToDo.Droid PreferredExecutionTarget="Android.9DC4C17418003168" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FluToDo/ServerConnections/ServerConnectionManager.cs">
     <Files>
-      <File FileName="FluToDo/ViewsItems/TodoListItemsView.xaml.cs" Line="6" Column="21" />
-      <File FileName="FluToDo/ViewsItems/TodoListItemsView.xaml" Line="49" Column="58" />
-      <File FileName="FluToDo/ViewModel/TodoListItemViewModel.cs" Line="70" Column="13" />
+      <File FileName="FluToDo/ViewsItems/TodoListItemsView.xaml.cs" Line="128" Column="1" />
+      <File FileName="FluToDo/ViewModel/TodoListItemViewModel.cs" Line="88" Column="1" />
+      <File FileName="FluToDo/ViewsItems/TodoListItemsView.xaml" Line="90" Column="15" />
+      <File FileName="FluToDo/ServerConnections/ServerConnectionManager.cs" Line="66" Column="13" />
+      <File FileName="FluToDo/ServerConnections/ServerConnection.cs" Line="103" Column="1" />
+      <File FileName="FluToDo/ViewsItems/CreateNewItem.xaml.cs" Line="46" Column="1" />
+      <File FileName="FluToDo/ViewModel/CreateNewItemViewModel.cs" Line="54" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -15,8 +19,6 @@
       <Breakpoint file="/Users/valerio/Projects/FluToDo/FluToDo/ServerConnections/HttpClientSample.cs" relfile="FluToDo/ServerConnections/HttpClientSample.cs" line="22" column="45" />
       <Breakpoint file="/Users/valerio/Projects/FluToDo/FluToDo/ServerConnections/HttpClientSample.cs" relfile="FluToDo/ServerConnections/HttpClientSample.cs" line="73" column="1" />
       <Breakpoint file="/Users/valerio/Projects/FluToDo/FluToDo/ServerConnections/HttpClientSample.cs" relfile="FluToDo/ServerConnections/HttpClientSample.cs" line="30" column="1" />
-      <Breakpoint file="/Users/valerio/Projects/FluToDo/FluToDo/ServerConnections/ServerConnectionManager.cs" relfile="FluToDo/ServerConnections/ServerConnectionManager.cs" line="109" column="1" />
-      <Breakpoint file="/Users/valerio/Projects/FluToDo/FluToDo/ServerConnections/ServerConnection.cs" relfile="FluToDo/ServerConnections/ServerConnection.cs" line="129" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.FluToDo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4987F3EA-6764-4678-8330-2DC959F214DD">

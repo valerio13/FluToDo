@@ -63,7 +63,7 @@ namespace FluToDo.ServerConnections
             {
                 using (HttpClient httpClient = this.GetHttpClient())
                 {
-                    HttpResponseMessage eventController = await httpClient.GetAsync(getString); //api/todo;
+                    HttpResponseMessage eventController = await httpClient.GetAsync(getString); 
                    
                     if (eventController.IsSuccessStatusCode)
                     {
@@ -98,7 +98,7 @@ namespace FluToDo.ServerConnections
                 {
                     httpClient.DefaultRequestHeaders.Accept.Clear();
 
-                    HttpResponseMessage eventController = await httpClient.PostAsJsonAsync(postString, todoItem);// .ContinueWith((postTask) => postTask.Result.EnsureSuccessStatusCode());
+                    HttpResponseMessage eventController = await httpClient.PostAsJsonAsync(postString, todoItem);
 
                     if (eventController.IsSuccessStatusCode)
                     {
@@ -130,7 +130,7 @@ namespace FluToDo.ServerConnections
                 {
                     httpClient.DefaultRequestHeaders.Accept.Clear();
 
-                    HttpResponseMessage eventController = await httpClient.PutAsJsonAsync(postString, todoItem );// .ContinueWith((postTask) => postTask.Result.EnsureSuccessStatusCode());
+                    HttpResponseMessage eventController = await httpClient.PutAsJsonAsync(postString, todoItem);
 
                     if (eventController.IsSuccessStatusCode)
                     {
@@ -161,7 +161,7 @@ namespace FluToDo.ServerConnections
                 {
                     httpClient.DefaultRequestHeaders.Accept.Clear();
 
-                    HttpResponseMessage eventController = await httpClient.DeleteAsync(deleteString);// .ContinueWith((postTask) => postTask.Result.EnsureSuccessStatusCode());
+                    HttpResponseMessage eventController = await httpClient.DeleteAsync(deleteString);
 
                     if (eventController.IsSuccessStatusCode)
                     {

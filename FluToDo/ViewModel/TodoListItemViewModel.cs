@@ -24,6 +24,11 @@ namespace FluToDo.ViewModel
         /// </summary>
         public EventHandler<bool> OnDeleteData;
 
+        /// <summary>
+        /// The state of the on change item.
+        /// </summary>
+        public EventHandler<bool> OnChangeItemState;
+
         #endregion
 
         #region Public Methods
@@ -40,8 +45,8 @@ namespace FluToDo.ViewModel
         /// </summary>
         public void GetData()
         {
+            this.serverConnectionManager.OnGetTaskCompleted += this.OnGetItemsCompleted;
             this.serverConnectionManager.GetTodoItem();
-            this.serverConnectionManager.OnGetTaskCompleted += this.OnGetTaskCompletedAsync;
         }
 
         public void DeleteItem(TodoItem todoItem)
@@ -49,10 +54,18 @@ namespace FluToDo.ViewModel
             this.serverConnectionManager.OnDeleteTaskCompleted += this.OnDeleteItemCompleted;
             this.serverConnectionManager.DeleteTodoItem(todoItem);
         }
+
+        public void ChangeItemState(TodoItem todoItem)
+        {
+            this.serverConnectionManager.OnUpdateTaskCompleted += OnUpdateItemStateCompleted;
+            this.serverConnectionManager.UpdateTodoItem(todoItem);
+            
+        }
+
         #endregion
 
         #region Private Methods
-        private async void OnGetTaskCompletedAsync(object sender, IEnumerable<TodoItem> todoItems)
+        private async void OnGetItemsCompleted(object sender, IEnumerable<TodoItem> todoItems)
         {
             if (todoItems != null)
             {
@@ -60,15 +73,21 @@ namespace FluToDo.ViewModel
             }
             else
             {
-                this.OnGetData(this, todoItems);
+                this.OnGetData(this, null);
             }
-
         }
 
-        void OnDeleteItemCompleted(object sender, bool result)
+        private void OnDeleteItemCompleted(object sender, bool result)
         {
             this.OnDeleteData(this, result);
         }
+
+
+        private void OnUpdateItemStateCompleted(object sender, bool result)
+        {
+            this.OnChangeItemState(this, result);
+        }
         #endregion
+
     }
 }
