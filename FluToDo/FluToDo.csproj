@@ -30,6 +30,9 @@
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
     <EmbeddedResource Include="FluToDoPage.xaml" />
+    <EmbeddedResource Include="ViewsItems\TodoListItemsView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -42,6 +45,10 @@
     <Compile Include="ServerConnections\ServerConnection.cs" />
     <Compile Include="Models\TodoItem.cs" />
     <Compile Include="ServerConnections\ServerConnectionManager.cs" />
+    <Compile Include="ViewsItems\TodoListItemsView.xaml.cs">
+      <DependentUpon>TodoListItemsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\TodoListItemViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
@@ -72,6 +79,8 @@
   <ItemGroup>
     <Folder Include="ServerConnections\" />
     <Folder Include="Models\" />
+    <Folder Include="ViewsItems\" />
+    <Folder Include="ViewModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

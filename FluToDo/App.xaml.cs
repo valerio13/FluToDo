@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using FluToDo.Models;
 using FluToDo.ServerConnections;
+using FluToDo.ViewsItems;
 using Xamarin.Forms;
 
 namespace FluToDo
@@ -27,10 +28,8 @@ namespace FluToDo
         {
             InitializeComponent();
 
-            MainPage = new FluToDoPage();
-
-            this.serverConnectionManager = new ServerConnectionManager();
-
+            MainPage = new NavigationPage();
+            MainPage.Navigation.PushAsync(new TodoListItemsView());
         }
 
         #endregion
@@ -55,48 +54,5 @@ namespace FluToDo
 
         #endregion
 
-        #region Private Methods
-
-        private void SetEvents(bool subscribe)
-        {
-            if (subscribe)
-            {
-                this.serverConnectionManager.OnGetTaskCompleted += this.OnGetTaskCompleted;
-                this.serverConnectionManager.OnCreateTaskCompleted += this.OnCreateTaskCompleted;
-                this.serverConnectionManager.OnDeleteTaskCompleted += this.OnDeleteTaskCompleted;
-                this.serverConnectionManager.OnUpdateTaskCompleted += this.OnUpdateTaskCompleted;
-            }
-            else
-            {
-                this.serverConnectionManager.OnGetTaskCompleted -= this.OnGetTaskCompleted;
-                this.serverConnectionManager.OnCreateTaskCompleted -= this.OnCreateTaskCompleted;
-                this.serverConnectionManager.OnDeleteTaskCompleted -= this.OnDeleteTaskCompleted;
-                this.serverConnectionManager.OnUpdateTaskCompleted -= this.OnUpdateTaskCompleted;
-            }
-        }
-
-        void OnCreateTaskCompleted(object sender, bool e)
-        {
-            //TODO: do something when create item is complete
-        }
-
-        void OnDeleteTaskCompleted(object sender, bool e)
-        {
-            //TODO: do something when delete item is complete
-
-        }
-
-        void OnUpdateTaskCompleted(object sender, bool e)
-        {
-            //TODO: do something when update item is complete
-
-        }
-
-        private void OnGetTaskCompleted(object sender, IEnumerable<Models.TodoItem> todoItems)
-        {
-            //TODO: do something when get item is complete
-
-        }
-        #endregion
     }
 }

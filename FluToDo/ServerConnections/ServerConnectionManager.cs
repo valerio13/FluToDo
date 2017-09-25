@@ -12,7 +12,7 @@ namespace FluToDo.ServerConnections
     public class ServerConnectionManager
     {
         #region Attributes
-        private readonly string serverName = "192.168.1.2";
+        private readonly string serverName = "192.168.1.6";
 
         private readonly int connectionPort = 8080;
 
