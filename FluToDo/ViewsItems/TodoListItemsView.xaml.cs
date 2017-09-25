@@ -71,6 +71,7 @@ namespace FluToDo.ViewsItems
             activityIndicator.IsRunning = false;
             activityIndicator.HeightRequest = 0;
 
+            listView.IsRefreshing = false;
         }
 
 
@@ -83,7 +84,9 @@ namespace FluToDo.ViewsItems
 
         void OnRefresh(object sender, EventArgs e)
         {
-            //TODO: manage the refresh event
+            this.todoListItemViewModel.OnGetData -= OnGetTaskCompletedAsync;
+            this.todoListItemViewModel.OnGetData += OnGetTaskCompletedAsync;
+            this.todoListItemViewModel.GetData();
         }
 
         void OnTap(object sender, ItemTappedEventArgs itemArgs)

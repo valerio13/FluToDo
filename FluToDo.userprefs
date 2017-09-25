@@ -1,14 +1,9 @@
 ﻿<Properties StartupConfiguration="{3B76A296-FBCD-4129-80D3-462BFACA38CE}|Default">
   <MonoDevelop.Ide.ItemProperties.FluToDo.Droid PreferredExecutionTarget="Android.9DC4C17418003168" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FluToDo/ServerConnections/ServerConnectionManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FluToDo/ViewsItems/TodoListItemsView.xaml.cs">
     <Files>
-      <File FileName="FluToDo/ViewsItems/TodoListItemsView.xaml.cs" Line="128" Column="1" />
+      <File FileName="FluToDo/ViewsItems/TodoListItemsView.xaml.cs" Line="89" Column="1" />
       <File FileName="FluToDo/ViewModel/TodoListItemViewModel.cs" Line="88" Column="1" />
-      <File FileName="FluToDo/ViewsItems/TodoListItemsView.xaml" Line="90" Column="15" />
-      <File FileName="FluToDo/ServerConnections/ServerConnectionManager.cs" Line="66" Column="13" />
-      <File FileName="FluToDo/ServerConnections/ServerConnection.cs" Line="103" Column="1" />
-      <File FileName="FluToDo/ViewsItems/CreateNewItem.xaml.cs" Line="46" Column="1" />
-      <File FileName="FluToDo/ViewModel/CreateNewItemViewModel.cs" Line="54" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
